@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<configurator>
+  <domain name="Test vendor #1"/>
+    <!-- Use manufacturerCode to indicate that this is a manufacturer specific
+       cluster. -->
+    <cluster manufacturerCode="0xFFF1">
+    <name>Gyro test</name>
+    <domain>Test vendor #1</domain>
+    <description>This cluster provides an example of how the Application. I modify for you.
+      </description>
+    <!-- Cluster Id must be within the mfg spec range 0xfc00 - 0xffff -->
+    <code>0x0410</code>
+    <define>WINDOWS_COVERING_CLUSTER</define>
+    <client init="false" tick="false">true</client>
+    <server init="false" tick="false">true</server>
+    <attribute side="server" code="0x0000" define="ATTRIBUTE_ONE" type="INT8U" min="0x00" max="0xFF" writable="true" default="0x00" optional="true">ember sample attribute</attribute>
+    <attribute side="server" code="0x0001" define="ATTRIBUTE_TWO" type="INT8U" min="0x00" max="0xFF" writable="true" default="0x00" optional="true">ember sample attribute 2</attribute>
+    <command source="client" code="0x00" name="CommandOne" optional="true">
+      <description>
+        A sample manufacturer specific command within the sample manufacturer specific
+        cluster.
+      </description>
+      <arg name="argOne" type="INT8U"/>
+    </command>
+  </cluster>
+  <!-- Use the cluster extension Extend the WindowCovering cluster -->
+  <!-- Use the cluster extension Extend the on/off cluster -->
+  <clusterExtension code="0x0410">
+    <attribute side="server" code="0x0000" define="SAMPLE_MFG_SPECIFIC_TRANSITION_TIME" type="INT16U" min="0x0000" max="0xFFFF" writable="true" default="0x0000" optional="true" manufacturerCode="0x1002">Sample Mfg Specific Attribute: 0x0000 0x1002</attribute>
+    <attribute side="server" code="0x0000" define="SAMPLE_MFG_SPECIFIC_TRANSITION_TIME_2" type="INT8U" min="0x0000" max="0xFFFF" writable="true" default="0x0000" optional="true" manufacturerCode="0x1049">Sample Mfg Specific Attribute: 0x0000 0x1049</attribute>
+    <attribute side="server" code="0x0001" define="SAMPLE_MFG_SPECIFIC_TRANSITION_TIME_3" type="INT8U" min="0x0000" max="0xFFFF" writable="true" default="0x00" optional="true" manufacturerCode="0x1002">Sample Mfg Specific Attribute: 0x0001 0x1002</attribute>
+    <attribute side="server" code="0x0001" define="SAMPLE_MFG_SPECIFIC_TRANSITION_TIME_4" type="INT16U" min="0x0000" max="0xFFFF" writable="true" default="0x0000" optional="true" manufacturerCode="0x1049">Sample Mfg Specific Attribute: 0x0001 0x1040</attribute>
+    <command source="client" code="0x00" name="SampleMfgSpecificOffWithTransition" optional="true" manufacturerCode="0x1002">
+      <description>Client command that turns the device off with a transition given
+        by the transition time in the Ember Sample transition time attribute.</description>
+    </command>
+    <command source="client" code="0x01" name="SampleMfgSpecificOnWithTransition" optional="true" manufacturerCode="0x1002">
+      <description>Client command that turns the device on with a transition given
+        by the transition time in the Ember Sample transition time attribute.</description>
+    </command>
+    <command source="client" code="0x02" name="SampleMfgSpecificToggleWithTransition" optional="true" manufacturerCode="0x1002">
+      <description>Client command that toggles the device with a transition given
+        by the transition time in the Ember Sample transition time attribute.</description>
+    </command>
+    <command source="client" code="0x01" name="SampleMfgSpecificOnWithTransition2" optional="true" manufacturerCode="0x1049">
+      <description>Client command that turns the device on with a transition given
+        by the transition time in the Ember Sample transition time attribute.</description>
+    </command>
+    <command source="client" code="0x02" name="SampleMfgSpecificToggleWithTransition2" optional="true" manufacturerCode="0x1049">
+      <description>Client command that toggles the device with a transition given
+        by the transition time in the Ember Sample transition time attribute.</description>
+    </command>
+  </clusterExtension>
+</configurator>

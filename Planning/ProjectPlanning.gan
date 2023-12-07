@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Thread/Matter project" company="" webLink="http://" view-date="2023-09-01" view-index="0" gantt-divider-location="453" resource-divider-location="300" version="3.2.3247" locale="en">
+    <description>
+        <![CDATA[Breakout game with gyroscope controller using Thread/Matter]]>
+    </description>
+    <view zooming-state="default:8" id="gantt-chart">
+        <field id="tpd3" name="Name" width="262" order="0"/>
+        <field id="tpd4" name="Begin date" width="94" order="1"/>
+        <field id="tpd5" name="End date" width="96" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="color.recent">
+            <![CDATA[#0000ff]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="87" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="12" name="Research" color="#8cb6ce" meeting="true" start="2023-12-25" duration="0" complete="0" thirdDate="2023-08-01" thirdDate-constraint="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="Total time project" color="#0000ff" meeting="true" start="2024-04-30" duration="0" complete="0" thirdDate="2023-08-28" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Totale project]]>
+            </notes>
+        </task>
+        <task id="0" name="Research Thread/Matter" color="#8cb6ce" meeting="false" start="2023-09-14" duration="70" complete="0" thirdDate="2023-10-23" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Research Matter protocol. Getting first the knowledge of the protocol to get started, after that dive deeper into it during the project.]]>
+            </notes>
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" name="Test Thread/Matter On/Off" color="#8cb6ce" meeting="false" start="2023-10-26" duration="10" complete="0" thirdDate="2023-11-14" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[* Test On/Off - OK
+
+
+]]>
+            </notes>
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" name="Test Thread/Matter LevelControl" color="#8cb6ce" meeting="false" start="2023-11-09" duration="20" complete="0" thirdDate="2023-04-03" thirdDate-constraint="0" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" name="Research Gyroscope" color="#8cb6ce" meeting="false" start="2023-12-07" duration="12" complete="0" thirdDate="2023-10-16" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Research wich registers i need and test it.]]>
+            </notes>
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" name="Building application" color="#8cb6ce" meeting="false" start="2023-12-25" duration="21" complete="0" thirdDate="2024-02-01" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[using the levelcontrol test and the gyroscope research and combine it]]>
+            </notes>
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" name="Functionele testen" color="#8cb6ce" meeting="false" start="2024-01-23" duration="15" complete="0" thirdDate="2024-03-14" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Testing how the data can be captured in the CHIP Tool.]]>
+            </notes>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="Find a breakout game and analyse" color="#8cb6ce" meeting="false" start="2024-02-13" duration="20" complete="0" thirdDate="2023-04-03" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Search for a breakout game and analyse the code so we can use the input to control it with the gyroscope.]]>
+            </notes>
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="10" name="Implement gyroscope data into game" color="#8cb6ce" meeting="false" start="2024-03-12" duration="25" complete="0" thirdDate="2023-04-03" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Changing the code of the game so we can use this with the gyroscope.]]>
+            </notes>
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" name="Project testing" color="#8cb6ce" meeting="false" start="2024-04-16" duration="10" complete="0" thirdDate="2023-04-03" thirdDate-constraint="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Bart" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="6" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations>
+        <vacation start="2023-12-24" end="2024-01-14" resourceid="0"/>
+    </vacations>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
