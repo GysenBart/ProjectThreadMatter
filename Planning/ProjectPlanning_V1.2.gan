@@ -8,7 +8,7 @@
         <field id="tpd5" name="End date" width="96" order="2"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="color.recent">
-            <![CDATA[#0000ff]]>
+            <![CDATA[#ff6633 #0033cc #666666 #00ff00 #cc0033 #0000ff]]>
         </option>
     </view>
     <view id="resource-table">
@@ -39,15 +39,15 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="12" name="Research" color="#8cb6ce" meeting="true" start="2023-12-25" duration="0" complete="0" thirdDate="2023-08-01" thirdDate-constraint="0" expand="true">
-            <depend id="6" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="5" name="Total time project" color="#0000ff" meeting="true" start="2024-04-30" duration="0" complete="0" thirdDate="2023-08-28" thirdDate-constraint="0" expand="true">
+        <task id="15" name="Demo job beurs" color="#ff6633" meeting="true" start="2024-02-28" duration="0" complete="0" thirdDate="2023-09-01" thirdDate-constraint="0" expand="true">
             <notes>
-                <![CDATA[Totale project]]>
+                <![CDATA[Hoeft de game niet te zijn, kan gewoon data zijn die we kunnen uitlezen. Gewoon een demo om een voorbeeld te geven.]]>
             </notes>
         </task>
-        <task id="0" name="Research Thread/Matter" color="#8cb6ce" meeting="false" start="2023-09-14" duration="70" complete="0" thirdDate="2023-10-23" thirdDate-constraint="0" expand="true">
+        <task id="12" name="Research" color="#00ff00" meeting="true" start="2023-12-25" duration="0" complete="0" thirdDate="2023-08-01" thirdDate-constraint="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="0" name="Research Thread/Matter" color="#666666" meeting="false" start="2023-09-14" duration="70" complete="0" thirdDate="2023-10-23" thirdDate-constraint="0" expand="true">
             <notes>
                 <![CDATA[Research Matter protocol. Getting first the knowledge of the protocol to get started, after that dive deeper into it during the project.]]>
             </notes>
@@ -65,7 +65,7 @@
         <task id="8" name="Test Thread/Matter LevelControl" color="#8cb6ce" meeting="false" start="2023-11-09" duration="20" complete="0" thirdDate="2023-04-03" thirdDate-constraint="0" expand="true">
             <depend id="1" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="1" name="Research Gyroscope" color="#8cb6ce" meeting="false" start="2023-12-07" duration="12" complete="0" thirdDate="2023-10-16" thirdDate-constraint="0" expand="true">
+        <task id="1" name="Research Gyroscope" color="#666666" meeting="false" start="2023-12-07" duration="12" complete="0" thirdDate="2023-10-16" thirdDate-constraint="0" expand="true">
             <notes>
                 <![CDATA[Research wich registers i need and test it.]]>
             </notes>
@@ -83,7 +83,7 @@
             </notes>
             <depend id="9" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="9" name="Find a breakout game and analyse" color="#8cb6ce" meeting="false" start="2024-02-13" duration="20" complete="0" thirdDate="2023-04-03" thirdDate-constraint="0" expand="true">
+        <task id="9" name="Research breakout game" color="#666666" meeting="false" start="2024-02-13" duration="20" complete="0" thirdDate="2023-04-03" thirdDate-constraint="0" expand="true">
             <notes>
                 <![CDATA[Search for a breakout game and analyse the code so we can use the input to control it with the gyroscope.]]>
             </notes>
@@ -95,9 +95,13 @@
             </notes>
             <depend id="11" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="11" name="Project testing" color="#8cb6ce" meeting="false" start="2024-04-16" duration="10" complete="0" thirdDate="2023-04-03" thirdDate-constraint="0" expand="true">
-            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        <task id="11" name="Project testing" color="#8cb6ce" meeting="false" start="2024-04-16" duration="13" complete="0" thirdDate="2023-04-03" thirdDate-constraint="0" expand="true"/>
+        <task id="5" name="Total time project" color="#cc0033" meeting="true" start="2024-05-02" duration="0" complete="0" thirdDate="2023-08-28" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Totale project]]>
+            </notes>
         </task>
+        <task id="14" name="Presentation" color="#0033cc" meeting="false" start="2024-02-29" duration="46" complete="0" thirdDate="2023-09-01" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Bart" function="Default:0" contacts="" phone=""/>
